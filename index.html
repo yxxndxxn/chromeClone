@@ -7,14 +7,16 @@
     <title>Momentum App</title>
 </head>
 <body>
-    <form id="login-form">
+    <form class="hidden" id="login-form">
         <input required maxlength="15" type="text" placeholder="What is your name?"/>
+        <!--여기에 required 쓰면 필수로 작성해야하는 란이 되어버려서 입력하라는 메시지가 자동으로 뜨게 됨! -->
+        
         <!-- <button>Login</button> -->
         <input type="submit" value="Log in"/>
         <!-- input 안에 있는 button을 누르거나 type이 submit인 input의 버튼을 클릭하면 (둘이 같은거임)
         내가 작성한 form이 submit 됨요! -->
     </form>
-    
+    <h1 id="greeting" class="hidden"></h1>
 
     <script src="app.js"></script>
 </body>
