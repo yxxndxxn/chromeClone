@@ -5,3 +5,19 @@ addEventListener 안에 있는 함수는 직접 실행하지 않는다
 addEventListener의 함수에서 object에 대한 자리만 할당해주면
 해당 이벤트가 발생시킨 정보들에 대한 object들을 볼 수 있다!
 이때 해당 이벤트가 가진 기본 Default값을 발생시키지 않기 하게 위해선 preventDefault를 이용하여 막을 수 있다!
+
+
+[setInterval& setTimeout]
+// function sayHello(){
+//     console.log("hello");
+// }
+
+// setInterval(sayHello, 5000)  //이러면 매 5초마다 sayhello 함수가 실행됨!
+// setTimeout(sayHello, 2000)  //이러면 2초가 지났을 때 한 번만 호출 됨!
+
+[padStart]
+getHours().padStart(2,"0")
+-> getHours로 시간을 받아오고 1시일 경우 01이 아닌 1로 나타난다.
+그래서 01로 나오게 하기위해 사용하는 함수임.
+padStart(2,"0") 2는 두글자가 되지않으면 0을 앞에 추가한다 라는 의미임.
+뒤에 추가하고싶으면 'padEnd'를 사용하면됨
