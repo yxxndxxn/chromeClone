@@ -2,7 +2,7 @@
     display: none;
 }
 
-/* img {
+img {
     position:absolute;
     width:100%;
     height:100%;
@@ -12,5 +12,5 @@
     bottom:0px;
     z-index: -1;
     opacity:80%;
-} */
+}
 /* z-index는 text의 z-index 보다 낮으면 뒷 배경으로 설정 됩니다.*/

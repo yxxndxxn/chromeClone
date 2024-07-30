@@ -3,7 +3,7 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
 //이르케 반복되는 string들은 대문자 변수로 저장해놓는것이 관습!
-const HIDDEN_CLASSNAME = "hidden";
+const HIDDEN_CLASSNAME  = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event){
