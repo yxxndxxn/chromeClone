@@ -1,16 +1,136 @@
-.hidden{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
     display: none;
 }
 
 img {
-    position:absolute;
-    width:100%;
-    height:100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0px;
     top: 0px;
-    right:0px;
-    bottom:0px;
+    right: 0px;
+    bottom: 0px;
     z-index: -1;
-    opacity:80%;
+    opacity: 80%;
 }
+
 /* z-index는 text의 z-index 보다 낮으면 뒷 배경으로 설정 됩니다.*/
+
+#clock {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #dcdcdc;
+}
+
+.greeting-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+#login-form {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+
+#login-form input::placeholder {
+    text-align: center;
+}
+
+#greeting {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #dcdcdc;
+}
+
+#todo-form {
+    text-align: center;
+}
+
+#todo-form input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #dcdcdc;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+
+#todo-form input::placeholder {
+    text-align: center;
+}
+
+#todo-list {
+    font-size: 20px;
+
+    text-align: center;
+    color: #dcdcdc;
+}
+
+#todo-list li {
+    position: relative;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+#todo-list li::after { /*형광펜 효과/ after는 가상 엘리먼트 -> 가상요소 after나 before을 쓸때는 content속성을 꼭 같이 사용함*/
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(245, 39, 39, 0.5);
+}
+
+#todo-list li:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#quote {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    bottom: 20px;
+}
+
+#weather {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
